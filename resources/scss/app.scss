@@ -123,6 +123,124 @@ header{
     }
 }
 
+//flash links
+
+.filler{
+    background-color: #0c7cec;
+    height: 180px;
+    .container{
+        height: 100%;
+        ul{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a{
+            display: flex;
+            text-decoration: none;
+            gap: 1rem;
+            align-items: center;
+            transform: scale(.9);
+            transition: all 250ms;
+
+                &:hover{
+                transform: scale(1.4);
+                }
+            #poi{
+                width: 50px;
+            }
+            img{
+                width: 80px;
+            }
+            span{
+                color: aliceblue;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+    }
+}
+
+//links
+
+.principal{
+    background-image: url(/resources/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        height: 500px;
+        .listes{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            ul{
+                max-height: 500px;
+                h3{
+                    color: aliceblue;
+                    text-transform: uppercase;                
+                }
+                a{
+                    color: rgb(175, 175, 175);
+                    text-decoration: none;
+                }
+            }
+        }
+        .img{
+            margin-top: -20px;
+        }
+    }
+}
 
 
+//footer
 
+footer{
+    background-color: rgb(25,25,25);
+    height: 150px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .butt{
+            background-color: rgb(25,25,25);
+            border: 3px solid #0c7cec;
+            padding: .3rem .6rem;
+            transition: all 250ms;
+            &:hover{
+                filter: brightness(1.5);
+                cursor: pointer;
+            }
+            a{
+                text-decoration: none;
+                color: aliceblue;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+        ul{
+            display: flex;
+            gap: 16px;
+            span{
+                display: flex;
+                align-items: center;
+                color: #0c7cec;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            a{
+                transition: all 250ms;
+                &:hover{
+                    filter: brightness(1.5);
+                }
+            }
+        }
+    }
+}
